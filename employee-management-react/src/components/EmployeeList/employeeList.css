@@ -1,0 +1,39 @@
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Liste elemanları arasında boşluk */
+  padding: 20px; /* Liste etrafında boşluk */
+}
+
+.employee-item {
+  display: flex;
+  align-items: center; /* Butonları ve ismi aynı hizada tutar */
+  gap: 10px; /* İsim ile butonlar arasındaki boşluk */
+  border: 1px solid #ddd; /* Elemanların etrafında ince bir çerçeve */
+  padding: 10px; /* Eleman içindeki boşluk */
+  border-radius: 5px; /* Köşeleri yuvarlatır */
+  background-color: #f9f9f9; /* Arka plan rengini açık gri yapar */
+}
+
+.employee-item span {
+  flex: 1; /* İsmin, butonlardan daha geniş olmasını sağlar */
+}
+
+.employee-item button {
+  margin: 0 5px; /* Butonlar arasında yatay boşluk */
+  padding: 5px 10px; /* Buton içindeki boşluk */
+  border: none; /* Buton kenarlarını kaldırır */
+  border-radius: 5px; /* Buton köşelerini yuvarlatır */
+  background-color: #007bff; /* Buton arka plan rengini mavi yapar */
+  color: white; /* Buton metnini beyaz yapar */
+  cursor: pointer; /* Butona hover ederken işaretçi işareti gösterir */
+}
+
+.employee-item button:hover {
+  background-color: #0056b3; /* Butona hover ederken arka plan rengini değiştirir */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
