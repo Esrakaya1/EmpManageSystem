@@ -46,8 +46,13 @@ This is a simple employee management system that allows employers to manage thei
      npm start
      ```
    * The React app will open in your default browser at http://localhost:3000.
+     
 ## API Endpoints
 * GET /api/Employees - Retrieve a list of all employees.
 * POST /api/Employees - Add a new employee.
 * PUT /api/Employees/{id} - Update an existing employee.
 * DELETE /api/Employees/{id} - Delete an employee.
+  
+## Screenshots
+*Project overview
+
