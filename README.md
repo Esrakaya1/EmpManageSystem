@@ -60,5 +60,6 @@ This is a simple employee management system that allows employers to manage thei
 
 ![Ekran görüntüsü 2024-08-16 105046](https://github.com/user-attachments/assets/c11650f0-c7de-441c-8e65-3525fcba4e05)
 
+![Ekran görüntüsü 2024-08-16 105105](https://github.com/user-attachments/assets/f67a7837-5e3d-425f-a151-a33e419857f7)
 
 
