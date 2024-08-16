@@ -56,3 +56,7 @@ This is a simple employee management system that allows employers to manage thei
 ## Screenshots
 *Project overview
 
+![Ekran görüntüsü 2024-08-16 105010](https://github.com/user-attachments/assets/6db8387f-e508-4912-a32a-0e9ddef3f8d3)
+
+
+
