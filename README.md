@@ -8,7 +8,7 @@ This is a simple employee management system that allows employers to manage thei
 
 ## Technologies Used
 * Backend: .NET Core 7
-* Frontend: React.js
+* Frontend: ReactJs
 * Database: In-memory database using List<Employee>
 * Tools: Visual Studio, Visual Studio Code, Postman
   
