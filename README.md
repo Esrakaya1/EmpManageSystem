@@ -1,5 +1,5 @@
 # Employee Management System 
-This is a simple employee management system that allows employers to manage their employees' basic information. The system enables users to view, add, update, and delete employee records. It is built using .NET Core for the backend and React.js for the frontend.
+This is a simple employee management system that allows employers to manage their employees' basic information. The system enables users to view, add, update, and delete employee records. It is built using .NET Core for the backend and React.js for the frontend. You can run it either locally (with npm / dotnet run) or using Docker for a containerized setup.
 ## Features
 * View Employees: Displays a list of employees with their name, age, and department.
 * Add Employee: Allows users to add a new employee to the system.
@@ -46,6 +46,13 @@ This is a simple employee management system that allows employers to manage thei
      npm start
      ```
    * The React app will open in your default browser at http://localhost:3000.
+  
+## Second Method
+  * Run with Docker Compose
+    
+    ```
+    docker-compose up --build
+    ```
      
 ## API Endpoints
 * GET /api/Employees - Retrieve a list of all employees.
