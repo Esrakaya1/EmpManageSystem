@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  backend:
+    build: ./EmployeeManagement
+    image: employee-backend
+    ports:
+      - "5215:80"
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+
+  frontend:
+    build: ./employee-management-react
+    image: employee-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

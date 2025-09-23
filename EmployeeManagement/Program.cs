@@ -15,7 +15,7 @@ namespace EmployeeManagement
             {
                 options.AddDefaultPolicy(builder =>
                 {
-                    builder.WithOrigins("http://localhost:3000") // React uygulamasının çalıştığı adres
+                    builder.AllowAnyOrigin() // React uygulamasının çalıştığı adres
                            .AllowAnyHeader()
                            .AllowAnyMethod();
                 });

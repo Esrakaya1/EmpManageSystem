@@ -45,7 +45,7 @@ const UpdateEmployeeForm = ({ employee, onUpdate, onCancel }) => {
         <button type="submit" className="update-button">
           Update
         </button>
-        <button type="button" onClick={onCancel}>
+        <button type="button" className="cancel-button" onClick={onCancel}>
           Cancel
         </button>
       </div>

@@ -1,5 +1,7 @@
 .update-employee-form {
   display: flex;
+  justify-content: center;
+  width: 500px;
   flex-direction: column;
   gap: 15px;
   padding: 20px;
@@ -30,11 +32,11 @@
   background-color: #0056b3;
 }
 
-.update-employee-form .delete-button {
+.update-employee-form .cancel-button {
   background-color: #dc3545;
 }
 
-.update-employee-form .delete-button:hover {
+.update-employee-form .cancel-button:hover {
   background-color: #c82333;
 }
 

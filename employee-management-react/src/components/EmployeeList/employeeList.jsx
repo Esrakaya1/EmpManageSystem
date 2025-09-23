@@ -58,25 +58,37 @@ const EmployeeList = () => {
   };
 
   return (
-    <div className="employee-list">
-      <h2>Employee List</h2>
-      {editingEmployee ? (
-        <UpdateEmployeeForm
-          employee={editingEmployee}
-          onUpdate={handleUpdate}
-          onCancel={() => setEditingEmployee(null)}
-        />
-      ) : (
-        employees.map((employee) => (
-          <div key={employee.Id} className="employee-item">
-            <span>
-              {employee.name} - {employee.age} - {employee.department}
-            </span>
-            <button onClick={() => setEditingEmployee(employee)}>Update</button>
-            <button onClick={() => handleDelete(employee.id)}>Delete</button>
-          </div>
-        ))
-      )}
+    <div className="container">
+      <h2 className="employee-list-header">Employee List</h2>
+      <div className="employee-list">
+        {editingEmployee ? (
+          <UpdateEmployeeForm
+            employee={editingEmployee}
+            onUpdate={handleUpdate}
+            onCancel={() => setEditingEmployee(null)}
+          />
+        ) : (
+          employees.map((employee) => (
+            <div key={employee.Id} className="employee-item">
+              <span>
+                {employee.name} - {employee.age} - {employee.department}
+              </span>
+              <button
+                className="update-button"
+                onClick={() => setEditingEmployee(employee)}
+              >
+                Update
+              </button>
+              <button
+                className="delete-button"
+                onClick={() => handleDelete(employee.id)}
+              >
+                Delete
+              </button>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 };

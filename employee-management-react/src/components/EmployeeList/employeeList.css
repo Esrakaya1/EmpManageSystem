@@ -3,6 +3,19 @@
   flex-direction: column;
   gap: 10px; /* Liste elemanları arasında boşluk */
   padding: 20px; /* Liste etrafında boşluk */
+  width: 500px;
+  margin: 0 auto; /* Listeyi ortalar */
+  border: 1px solid #ddd; /* Liste etrafında ince bir çerçeve */
+  border-radius: 8px; /* Liste köşelerini yuvarlatır */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Listeyi yatayda ortalar */
+  gap: 10px; /* Liste ile başlık arasında boşluk */
+}
+.employee-list-header {
+  padding-top: 20px;
 }
 
 .employee-item {
@@ -19,7 +32,7 @@
   flex: 1; /* İsmin, butonlardan daha geniş olmasını sağlar */
 }
 
-.employee-item button {
+.employee-item .update-button {
   margin: 0 5px; /* Butonlar arasında yatay boşluk */
   padding: 5px 10px; /* Buton içindeki boşluk */
   border: none; /* Buton kenarlarını kaldırır */
@@ -28,11 +41,21 @@
   color: white; /* Buton metnini beyaz yapar */
   cursor: pointer; /* Butona hover ederken işaretçi işareti gösterir */
 }
-
-.employee-item button:hover {
+.employee-item .delete-button {
+  margin: 0 5px; /* Butonlar arasında yatay boşluk */
+  padding: 5px 10px; /* Buton içindeki boşluk */
+  border: none; /* Buton kenarlarını kaldırır */
+  border-radius: 5px; /* Buton köşelerini yuvarlatır */
+  background-color: #dc3545; /* Buton arka plan rengini kırmızı yapar */
+  color: white; /* Buton metnini beyaz yapar */
+  cursor: pointer; /* Butona hover ederken işaretçi işareti gösterir */
+}
+.employee-item .update-button:hover {
   background-color: #0056b3; /* Butona hover ederken arka plan rengini değiştirir */
 }
-
+.employee-item .delete-button:hover {
+  background-color: #c82333; /* Butona hover ederken arka plan rengini değiştirir */
+}
 h2 {
   text-align: center;
   margin-bottom: 10px;
